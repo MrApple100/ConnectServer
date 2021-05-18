@@ -1,9 +1,8 @@
-package Mapper;
+package hello;
 
-import Model.User;
+import hello.User;
 import org.springframework.jdbc.core.RowMapper;
 
-import javax.swing.tree.TreePath;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 

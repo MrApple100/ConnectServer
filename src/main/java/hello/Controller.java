@@ -1,13 +1,9 @@
 package hello;
 
-import Model.User;
-import Repository.UserRepository;
-import org.hibernate.validator.constraints.SafeHtml;
 import org.springframework.web.bind.annotation.*;
 
 
 import java.util.HashMap;
-import java.util.Map;
 
 @RestController
 public class Controller {
@@ -16,7 +12,7 @@ public class Controller {
     public HashMap<Long, User> getAll() {
         HashMap<Long,User> hashMap=new HashMap<>();
         for(User user:userRepository.getUsers())
-            hashMap.put(user.getId(),user);
+           hashMap.put(user.getId(),user);
         return hashMap;
     }
     @PostMapping("Users/{NetName}")
@@ -30,7 +26,7 @@ public class Controller {
     }
     @PutMapping("Users/{NetName}")
     public User updateUserInfo(@PathVariable("NetName") Long NetName, @RequestBody User user){
-        userRepository.updateUser(user);
+       userRepository.updateUser(user);
         return user;
     }
     @DeleteMapping("Users/{NetName}")

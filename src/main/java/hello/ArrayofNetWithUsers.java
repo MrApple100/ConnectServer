@@ -1,7 +1,5 @@
 package hello;
 
-import Model.User;
-
 import java.util.HashMap;
 
 public class ArrayofNetWithUsers {
