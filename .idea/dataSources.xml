@@ -4,8 +4,15 @@
     <data-source source="LOCAL" name="BaseData of Connect" uuid="9759d678-4ae2-4c7a-aa5b-514acc32497b">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/Connect</jdbc-url>
+      <jdbc-url>postgres://jmeaonxdncafac:5b73a0fec0b65272b7f5011e9974e6003aa0efe875aca6d62f7b776e719686c7@ec2-63-34-97-163.eu-west-1.compute.amazonaws.com:5432/dba3vngjtqe6r</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="postgres://jmeaonxdncafac:5b73a0fec0b65272b7f5011e9974e6003aa0efe875aca6d62f7b776e719686c7@ec2-63-34-97-163.eu-west-1.compute.amazonaws.com:5432/dba3vngjtqe6r" uuid="c7034302-0346-4901-a9e1-566f547c0e4c">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>postgres://jmeaonxdncafac:5b73a0fec0b65272b7f5011e9974e6003aa0efe875aca6d62f7b776e719686c7@ec2-63-34-97-163.eu-west-1.compute.amazonaws.com:5432/dba3vngjtqe6r</jdbc-url>
     </data-source>
   </component>
 </project>

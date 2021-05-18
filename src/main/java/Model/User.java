@@ -14,7 +14,7 @@ public class User {
         this.last_name = last_name;
 
     }
-
+    public User() { }
     public String getFirst_name() {
         return first_name;
     }
