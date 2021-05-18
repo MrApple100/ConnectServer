@@ -11,11 +11,11 @@ import java.util.Map;
 @RestController
 public class Controller {
     ArrayofNetWithUsers arrayofNetWithUsers=new ArrayofNetWithUsers();
-    @GetMapping("/Users")
+    @GetMapping("Users")
     public HashMap<Long, User> getAll() {
         return arrayofNetWithUsers.hashMap;
     }
-    @PostMapping("/Users/{NetName}")
+    @PostMapping("Users/{NetName}")
     public User postUserInfo(@PathVariable("NetName") Long NetName, @RequestBody User user){
         System.out.println(NetName+""+user);
         User user1=user;
@@ -24,12 +24,12 @@ public class Controller {
         System.out.println(arrayofNetWithUsers.hashMap.get(NetName));
         return user1;
     }
-    @PutMapping("/Users/{NetName}")
+    @PutMapping("Users/{NetName}")
     public User updateUserInfo(@PathVariable("NetName") Long NetName, @RequestBody User user){
         User user1 = arrayofNetWithUsers.hashMap.replace(NetName,user);
         return user1;
     }
-    @DeleteMapping("/Users/{NetName}")
+    @DeleteMapping("Users/{NetName}")
     public User deleteUserInfo(@PathVariable("NetName") Long NetName){
         User user1 = arrayofNetWithUsers.hashMap.remove(NetName);
         return user1;
