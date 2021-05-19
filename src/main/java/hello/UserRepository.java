@@ -28,7 +28,7 @@ public class UserRepository {
     }
 
     public int updateUser(User user){
-        return jdbcTemplate.update("UPDATE \"USERS\" SET \"FIRSTNAME\" = ? , \"LASTNAME\" WHERE \"NETNAME\" = ?", user.getFirst_name(),user.getLast_name(), Integer.parseInt(user.getId().toString()));
+        return jdbcTemplate.update("UPDATE \"USERS\" SET \"FIRSTNAME\" = ? , \"LASTNAME\" = ? WHERE \"NETNAME\" = ?", user.getFirst_name(),user.getLast_name(), Integer.parseInt(user.getId().toString()));
     }
 
     public int deleteUser(Integer id){
