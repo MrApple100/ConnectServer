@@ -1,5 +1,6 @@
 package hello;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -7,6 +8,7 @@ import java.util.HashMap;
 
 @RestController
 public class Controller {
+    @Autowired
     UserRepository userRepository=new UserRepository();
     @GetMapping("Users")
     public HashMap<Long, User> getAll() {
